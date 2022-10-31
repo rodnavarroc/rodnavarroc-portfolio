@@ -1,0 +1,10 @@
+.project-card-container {
+    width: 690px;
+    height: 440px;
+    background-color: darkgray;
+
+    @media(max-width: 768px) {
+        width: 350px;
+        height: 200px;
+    }
+}
