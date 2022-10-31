@@ -10,7 +10,7 @@ const index = () => {
         
         <div className="intro">
           <div>
-            <h2>Hello! 👋🏻 I'm a fullstack web developer <b> based in Mexico 🇲🇽</b></h2>
+            <h2>Hello! 👋🏻 I&apos;m a fullstack web developer <b> based in Mexico 🇲🇽</b></h2>
             <h4>This is a quick view on me and my work. 👇🏻</h4>
             <div className="contact">
               <span>Keep scrolling,</span>
