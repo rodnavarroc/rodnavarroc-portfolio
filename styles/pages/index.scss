@@ -96,7 +96,8 @@
         color: #fff;
         margin-bottom: 36px;
 
-        .projects {
+        .projects,
+        .skills {
             width: 90%;
         }
 
@@ -106,7 +107,7 @@
             align-items: center;
 
             h2 {
-                font-size: 36px;
+                font-size: 28px;
                 width: 30%;
                 text-align: center;
             }
@@ -123,14 +124,30 @@
             }
         }
 
-        .body {
+        .projects .body {
             width: 100%;
             height: auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 12px;
+            gap: 24px;
             flex-wrap: wrap;
+
+            @media(max-width: 768px) {
+                gap: 12px;
+            }
+        }
+
+        .skills .body {
+
+            .iconsFlex {
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+                flex-wrap: wrap;
+            }
         }
 
         @media(max-width: 768px) {

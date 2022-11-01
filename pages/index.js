@@ -1,13 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import ProjectCard from '../components/ProjectCard/ProjectCard'
+import SkillCard from '../components/SkillCard/SkillCard'
 
 const index = () => {
   return (
     <>
       <Navbar />
       <div className="index-container">
-        
+
         <div className="intro">
           <div>
             <h2>Hello! 👋🏻 I&apos;m a fullstack web developer <b> based in Mexico 🇲🇽</b></h2>
@@ -40,6 +41,28 @@ const index = () => {
 
           </div>
         </div>
+
+        <div className="section">
+          <div className="skills">
+
+            <div className="title">
+              <div className="line" />
+              <h2>Tech & Skills</h2>
+              <div className="line" />
+            </div>
+
+            <div className="body">
+              <div className="iconsFlex">
+                <SkillCard image="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" />
+                <SkillCard image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" />
+                <SkillCard image="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" />
+                <SkillCard image="https://play-lh.googleusercontent.com/hvK9JjjMrQ-MSP98UVqmwpgojkc89P5tYvLUbvbnAqORVx3o7mUhk_NNdSD4S9_F8pw" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br />
       </div>
     </>
   )
