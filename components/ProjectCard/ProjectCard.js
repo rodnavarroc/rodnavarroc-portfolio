@@ -1,16 +1,20 @@
 import React from 'react'
 
-const ProjectCard = () => {
+const ProjectCard = ({image, name, description}) => {
   return (
     <div className="project-card-container">
 
       <div className="image">
-        <img src="https://4kwallpapers.com/images/wallpapers/lakeside-sunset-deer-minimal-art-landscape-scenic-panorama-2560x1080-4592.png" alt="" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ28WA2ZQREgEZ1jva2HNK6hzzNLXtnkxGhG2eCg1bAuw&s" alt={name} />
       </div>
 
       <div className='card-project-body'>
-        <h3>Really large project name</h3>
-        <h5>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptas animi nostrum, id architecto.</h5>
+        <h3>{name}</h3>
+        <h5>{description}</h5>
+
+        <h6>TECH STACK</h6>
+
+        <span className='checkitout-button'>Check it out 👉🏻</span>
       </div>
     </div>
   )
