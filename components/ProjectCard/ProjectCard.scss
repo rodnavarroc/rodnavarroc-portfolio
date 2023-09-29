@@ -15,6 +15,11 @@
         text-align: left;
         padding: 6px 12px;
         margin-right: 12px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
 
         h3 {
             margin-top: 0;
@@ -28,26 +33,48 @@
         }
 
         h5 {
+            margin-top: 0;
+            margin-bottom: 0;
             font-size: 13px;
             font-weight: 400;
             color: #cdcdcd;
         }
 
         h6 {
+            margin-top: 0;
+            margin-bottom: 0;
             font-size: 12px;
             color: #f2f2f2;
         }
 
+        .tech-stack-container {
+            display: flex;
+            justify-content: flex-start;
+            gap: 12px;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+                width: 30px;
+            }
+        }
+
         .checkitout-button {
+            cursor: pointer;
+            width: 125px;
             font-size: 12px;
-            padding: 6px 18px;
+            padding: 6px 12px;
             background: #e96443;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             /* fallback for old browsers */
             background: -webkit-linear-gradient(to right, #904e95, #e96443);
             /* Chrome 10-25, Safari 5.1-6 */
             background: linear-gradient(to right, #904e95, #e96443);
             /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             border-radius: 6px;
+            text-align: center;
         }
 
         @media(max-width: 768px) {
