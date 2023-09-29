@@ -5,7 +5,7 @@ const ProjectCard = ({ image, name, description, stack, url, adultsOnly }) => {
   const renderStackElement = (e) => {
     switch (e) {
       case 'NextJS': {
-        return <img src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" />
+        return <img src="https://seeklogo.com/images/N/next-js-icon-logo-EE302D5DBD-seeklogo.com.png" />
       }
       case 'PHP': {
         return <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png" />
